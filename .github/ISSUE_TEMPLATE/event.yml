@@ -1,0 +1,52 @@
+name: Cadastrar Evento
+description: Cadastre o Evento
+title: "[Conference]: "
+body:
+  - type: input
+    id: evento
+    attributes:
+      label: Nome do Evento;
+      description: Nome do evento que será realizado
+      placeholder: ex. GitHub Zero to Hero
+    validations:
+      required: true
+  - type: input
+    id: data
+    attributes:
+      label: Data do Evento;
+      description: Data do evento que será realizado
+      placeholder: ex. 01/12/2022
+    validations:
+      required: true
+  - type: textarea
+    id: image
+    attributes:
+      label: Badge;
+      description: Faça o Upload da Badge do Evento
+      placeholder: Badge
+  - type: textarea
+    id: image600
+    attributes:
+      label: Badge 600x600;
+      description: Faça o Upload da Badge 600x600 do Evento
+      placeholder: Badge600x600   
+  - type: textarea
+    id: description
+    attributes:
+      label: Descreva o Evento;
+      description: Faça uma Descrição do Evento
+      placeholder: Descrição
+  - type: textarea
+    id: skills
+    attributes:
+      label: Habilidades Aprendidas;
+      description: Descreva as Habilidades Aprendidas no Evento
+      placeholder: "<ul>
+                      <li>Sabe oque é o GitHub</li>
+                      <li>Como criar uma conta no GitHub</li>
+                      <li>Oque é CI e CD</li>
+                      <li>Quanto Custa usar o GitHub</li>
+                      <li>organizações no GitHub</li>
+                      <li>Implantação de Aplicações com GitHub Actions</li>
+                     </ul>"
+   
